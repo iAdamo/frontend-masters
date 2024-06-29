@@ -1,0 +1,114 @@
+/**
+ * FILEPATH: /home/adamo/Workspace/a/master/news.css
+ *
+ * This CSS file contains styles for a news website.
+ * It includes styles for the overall layout, header, navigation links, and individual stories.
+ */
+
+/* Reset box-sizing for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Styles for the body element */
+.body {
+    padding: 300px;
+}
+
+/* Styles for the brand element */
+.brand {
+    font-family: "Snell Roundhand";
+    font-weight: normal;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Styles for the brand header element */
+.brand-header {
+    grid-area: header;
+}
+
+/* Styles for the navigation links */
+.nav-links {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    border: 3px solid black;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Styles for the section links */
+.section-link {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Futura";
+    color: #666;
+}
+
+/* Styles for the section links on hover */
+.section-link:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the individual story elements */
+.story {
+    padding: 10px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+/* Styles for the first story element */
+.story-1 {
+    grid-area: story-1;
+}
+
+/* Styles for the second story element */
+.story-2 {
+    grid-area: story-2;
+}
+
+/* Styles for the third story element */
+.story-3 {
+    grid-area: story-3;
+    border-right: 3px solid black;
+}
+
+/* Styles for the fourth story element */
+.story-4 {
+    grid-area: story-4;
+}
+
+/* Styles for the fifth story element */
+.story-5 {
+    grid-area: story-5;
+    border-right: 3px solid black;
+}
+
+/* Styles for the article title */
+.article-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Styles for the article image */
+.article-img {
+    display: block;
+    margin: 0 auto;
+    max-height: 250px;
+}
+
+/* Styles for the page layout */
+.page {
+    display: grid;
+    grid-template-areas:
+      "header    header     header"
+      "nav       nav       nav"
+      "story-1   story-2   story-3"
+      "story-4   story-5   story-5";
+}
